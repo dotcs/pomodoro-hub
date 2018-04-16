@@ -1,0 +1,7 @@
+{
+  "src/**/*.{ts,tsx}": [
+    "yarn lint",
+    "yarn prettier:base",
+    "git add"
+  ]
+}

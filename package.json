@@ -5,13 +5,18 @@
   "main": "build/main.js",
   "license": "MIT",
   "scripts": {
+    "precommit": "lint-staged",
     "dev": "webpack --watch",
     "start": "electron .",
     "lint":
       "tslint --type-check --project tsconfig.json --config tslint.json \"src/**/*.{ts,tsx}\"",
     "build": "webpack",
     "package:osx":
-      "electron-packager ./ --platform=darwin --arch=x64 --out=out --overwrite"
+      "electron-packager ./ --platform=darwin --arch=x64 --out=out --overwrite",
+    "prettier:base": "prettier --parser typescript",
+    "prettier:list":
+      "yarn prettier:base --list-different \"src/**/*.{ts,tsx}\"",
+    "prettier:write": "yarn prettier:base --write \"src/**/*.{ts,tsx}\""
   },
   "devDependencies": {
     "@types/classnames": "^2.2.3",
@@ -25,6 +30,8 @@
     "electron-devtools-installer": "^2.2.3",
     "electron-packager": "^12.0.0",
     "electron-prebuilt": "^1.4.13",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.4",
     "style-loader": "^0.20.3",
     "ts-loader": "^4.1.0",
     "tslint": "^5.9.1",
