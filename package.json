@@ -8,6 +8,7 @@
     "precommit": "lint-staged",
     "dev": "webpack --watch",
     "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "lint":
       "tslint --type-check --project tsconfig.json --config tslint.json \"src/**/*.{ts,tsx}\"",
     "build": "webpack",
