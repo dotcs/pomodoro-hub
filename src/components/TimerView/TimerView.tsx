@@ -137,4 +137,4 @@ export class TimerView extends React.Component<TimerViewProps, TimerViewState> {
 export default compose<TimerViewOwnProps>(
   connect(mapStateToProps, mapDispatchToProps),
   withStyles(styles)
-)(TimerView);
+)(TimerView as any);

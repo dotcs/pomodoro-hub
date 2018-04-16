@@ -57,4 +57,4 @@ Clock.defaultProps = {
   size: 32
 };
 
-export default compose<ClockOwnProps>(withStyles(styles))(Clock);
+export default compose<ClockOwnProps>(withStyles(styles))(Clock as any);

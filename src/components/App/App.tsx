@@ -59,4 +59,4 @@ const App: React.SFC<AppProps> = props => {
 export default compose<AppOwnProps>(
   withStyles(styles),
   connect(mapStateToProps, mapDispatchToProps)
-)(App);
+)(App as any);

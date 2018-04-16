@@ -155,4 +155,4 @@ export const SettingsView: React.SFC<SettingsViewProps> = props => {
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   withStyles(styles)
-)(SettingsView);
+)(SettingsView as any);
