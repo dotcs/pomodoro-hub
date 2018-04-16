@@ -5,6 +5,8 @@
     "jsx": "react",
     "sourceMap": true,
     "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": false,
     "outDir": "build"
   }
 }
