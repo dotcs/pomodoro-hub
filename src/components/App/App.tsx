@@ -2,7 +2,7 @@ import * as React from "react";
 import cx from "classnames";
 import { connect } from "react-redux";
 import { withStyles, WithStyles, StyleRulesCallback } from "material-ui/styles";
-import SettingsIcon from "material-ui-icons/settings";
+import SettingsIcon from "material-ui-icons/Settings";
 import IconButton from "material-ui/IconButton";
 
 import OffIcon from "../Icons/OffIcon";
